@@ -6,8 +6,6 @@
 
     }
 
-    app.controller('homeController', function ($scope) {
-        
-    });
+    app.controller('homeController', homeController);
 
 }());
