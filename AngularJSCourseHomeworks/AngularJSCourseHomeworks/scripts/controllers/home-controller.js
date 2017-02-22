@@ -1,11 +1,9 @@
 ﻿(function () {
-
     'use strict'
 
     var homeController = function homeController($scope) {
+        $scope.HomePageTitle = "AngularJS Homeworks"
+    };
 
-    }
-
-    app.controller('homeController', homeController);
-
+    app.controller('HomeController', ['$scope', homeController]);
 }());
