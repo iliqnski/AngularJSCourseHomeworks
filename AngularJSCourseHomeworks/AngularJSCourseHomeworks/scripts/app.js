@@ -2,9 +2,13 @@
 
 app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
-        .when("/home", {
-            templateUrl: "/index.html",
+        .when("/", {
+            templateUrl: "views/home.html",
             controller: "HomeController"
+        })
+        .when("/students", {
+            templateUrl: "/views/students.html",
+            controller: "StudentsController"
         })
         .otherwise({ redirectTo: '/' });
 

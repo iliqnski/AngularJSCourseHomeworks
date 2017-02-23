@@ -18,4 +18,3 @@ C:\Users\iliqnski\Desktop\AngularJSCourseHomeworks\AngularJSCourseHomeworks\Angu
 C:\Users\iliqnski\Desktop\AngularJSCourseHomeworks\AngularJSCourseHomeworks\AngularJSCourseHomeworks\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\iliqnski\Desktop\AngularJSCourseHomeworks\AngularJSCourseHomeworks\AngularJSCourseHomeworks\obj\Debug\AngularJSCourseHomeworks.dll
 C:\Users\iliqnski\Desktop\AngularJSCourseHomeworks\AngularJSCourseHomeworks\AngularJSCourseHomeworks\obj\Debug\AngularJSCourseHomeworks.pdb
-C:\Users\iliqnski\Desktop\AngularJSCourseHomeworks\AngularJSCourseHomeworks\AngularJSCourseHomeworks\obj\Debug\AngularJSCourseHomeworks.csprojResolveAssemblyReference.cache

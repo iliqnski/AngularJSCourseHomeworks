@@ -121,7 +121,10 @@
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\app.js" />
     <Content Include="scripts\controllers\home-controller.js" />
+    <Content Include="scripts\controllers\students-controller.js" />
     <Content Include="styles\styles.css" />
+    <Content Include="views\home.html" />
+    <Content Include="views\students.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
