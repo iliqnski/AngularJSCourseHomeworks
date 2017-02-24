@@ -10,6 +10,10 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: "/views/students.html",
             controller: "StudentsController"
         })
+        .when("/bindimage", {
+            templateUrl: "/views/bindimage.html",
+            controller: "BindImageController"
+        })
         .otherwise({ redirectTo: '/' });
 
     $locationProvider.html5Mode({
