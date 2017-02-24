@@ -10,8 +10,8 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: "/views/students.html",
             controller: "StudentsController"
         })
-        .when("/bindimage", {
-            templateUrl: "/views/bindimage.html",
+        .when("/bindable", {
+            templateUrl: "/views/bindable.html",
             controller: "BindImageController"
         })
         .otherwise({ redirectTo: '/' });
