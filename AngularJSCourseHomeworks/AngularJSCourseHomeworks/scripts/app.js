@@ -1,6 +1,6 @@
 ﻿var app = angular.module('myApp', ['ngRoute']);
 
-app.config(function ($routeProvider, $locationProvider) {
+app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "views/home.html",
@@ -20,4 +20,4 @@ app.config(function ($routeProvider, $locationProvider) {
         enabled: true,
         requireBase: false
     });
-});
+}]);
