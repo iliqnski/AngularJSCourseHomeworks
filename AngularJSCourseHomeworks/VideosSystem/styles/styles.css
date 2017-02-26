@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.img{
+    width: 150px;
+}
+
+.img-li{
+    list-style-type: none;
+}
+
+.required {
+    color: #ff0000;
+}

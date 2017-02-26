@@ -1,0 +1,52 @@
+﻿<div ng-controller="AddVideoController as vm">
+    <h2>{{vm.Title}}</h2>
+
+    <form name="videosForm">
+        <label>
+            <b>Title:</b> 
+            <input type="text" name="title" ng-model="video.title" required />
+            <label class="required" ng-hide="videosForm.$valid">* Required field</label>
+        </label>
+        <br />
+
+        <label>
+            <b>PictureUrl:</b>
+            <input type="url" name="url" ng-model="video.pictureUrl" required />
+            <label class="required" ng-hide="videosForm.$valid">* Required field</label>
+        </label>
+        <br />
+
+        <label>
+            <b>Length:</b>
+            <input type="text" ng-model="video.length" />
+        </label>
+        <br />
+
+        <label>
+            <b>Category:</b>
+            <input type="text" name="category" ng-model="video.category" required />
+            <label class="required" ng-hide="videosForm.$valid">* Required field</label>
+        </label>
+        <br />
+
+        <label>
+            <b>Subscribers:</b>
+            <input type="number" ng-model="video.subscribers" />
+        </label>
+        <br />
+
+        <label>
+            <b>Date:</b>
+            <input type="date" ng-model="video.date" />
+        </label>
+        <br />
+
+        <label>
+            <b>Have Subtitles:</b>
+            <input type="checkbox" ng-model="video.haveSubtitles" />
+        </label>
+        <br />
+
+        <input type="submit" ng-disabled="videosForm.$invalid" ng-click="vm.addVideo(video)" value="Add Video" />
+    </form>
+</div>

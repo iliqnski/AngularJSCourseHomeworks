@@ -1,0 +1,48 @@
+﻿<div ng-controller="HomeController as vm">
+    <h2>
+        {{vm.Title}}
+    </h2>
+
+    <select ng-model="sort">
+        <option value="title">title</option>
+        <option value="length">length</option>
+        <option value="date">date</option>
+        <option value="likes">likes</option>
+    </select>
+
+    <ul ng-repeat="video in vm.videos | orderBy:sort">
+        <li>
+            <h3><b>Title:</b> {{video.title}}</h3>
+        </li>
+        <li class="img-li">
+            <img src="{{video.pictureUrl}}" alt="VideoUrl" class="img" />
+        </li>
+        <li>
+            <b>Length:</b> {{video.length}}
+        </li>
+        <li>
+            <b>Category:</b> {{video.category}}
+        </li>
+        <li>
+            <b>Subscribers:</b> {{video.subscribers}}
+        </li>
+        <li>
+            <b>Date:</b> {{video.date}}
+        </li>
+        <li>
+            <b>HaveSubtitles:</b> {{video.haveSubtitles}}
+        </li>
+        <li>
+            <b>Comments:</b>
+            <ul ng-repeat="comment in video.comments">
+                <li><b>UserName:</b> {{comment.username}}</li>
+                <li><b>Date:</b> {{comment.date}}</li>
+                <li><b>Content:</b> {{comment.content}}</li>
+                <li><b>Likes:</b> {{comment.likes}}</li>
+                <li class="img-li">
+                    <img src="{{comment.websiteUrl}}" alt="PictureUrl" class="img" />
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
